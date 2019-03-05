@@ -10,7 +10,7 @@ function getData() {
             $('#arrowContainer').html('Arrow containes not a number');
             $( "#sortArrow" ).removeClass('btn-primary');
             $( "#sortArrow" ).addClass('btn-danger');
-            $( "#sortArrow" ).text('Failed');
+            $( "#sortArrow" ).text('Fail sorted');
             isValid=false;
         }
         else{
@@ -18,7 +18,7 @@ function getData() {
             $( "#sortArrow" ).removeClass('btn-primary');
             $( "#sortArrow" ).removeClass('btn-danger');
             $( "#sortArrow" ).addClass('btn-success');
-            $( "#sortArrow" ).text('Success');
+            $( "#sortArrow" ).text('Success sorted');
         }
 
 

@@ -32,22 +32,23 @@ function clearPreviousResults() {
 }
 
 
-function quickSort(origArray) {
-    if (origArray.length <= 1) {
-        return origArray;
+function quickSort(array) {
+    if (array.length <= 1) {
+        return array;
     } else {
 
         let left = [];
         let right = [];
         let newArray = [];
-        var pivot = origArray.pop();
-        let length = origArray.length;
+        var pivot = array.pop();
+
+        let length = array.length;
 
         for (let i = 0; i < length; i++) {
-            if (origArray[i] <= pivot) {
-                left.push(origArray[i]);
+            if (array[i] <= pivot) {
+                left.push(array[i]);
             } else {
-                right.push(origArray[i]);
+                right.push(array[i]);
             }
         }
 
